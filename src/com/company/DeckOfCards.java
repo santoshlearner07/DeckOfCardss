@@ -6,9 +6,8 @@ package com.company;
 
 
 public class DeckOfCards {
-    public static void main(String[] args) {
 
-        System.out.println("Welcome to Card of Games");
+    void DeckOfCards() {
 
         String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades" };
         String[] rank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
@@ -17,7 +16,13 @@ public class DeckOfCards {
             deck[i] = suits[i / 13] + "-" + rank[i % 13];   //  % returns the remainder as 0,1,2,3 / returs 0,0,0 * 13 then 1,1,1 *13
 
             System.out.println(deck[i]);
-
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to Card of Games");
+
+        DeckOfCards cards = new DeckOfCards();
+        cards.DeckOfCards();
     }
 }
