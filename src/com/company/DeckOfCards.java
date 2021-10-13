@@ -20,9 +20,9 @@ public class DeckOfCards {
     }
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Card of Games");
+        System.out.println("Welcome to Game of Cards");
 
-        DeckOfCards cards = new DeckOfCards();
+        DeckOfCards cards = new DeckOfCards();  // creating object
         cards.DeckOfCards();
     }
 }
